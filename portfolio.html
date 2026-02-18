@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mageshwaran Maran - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader-container">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-text">MM</div>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">MM</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">Hello, I'm</div>
+                <h1 class="hero-name">
+                    <span class="name-first">Mageshwaran</span>
+                    <span class="name-last">Maran</span>
+                </h1>
+                <div class="hero-title">
+                    <span class="typing-text" id="typing-text"></span>
+                </div>
+                <p class="hero-description">
+                    Transforming complex clinical data into actionable insights | 
+                    Specializing in biomarker analysis, clinical programming, and statistical modeling | 
+                    Expertise in R, SAS, Python, and advanced data visualization
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View Work</a>
+                </div>
+                <div class="hero-social">
+                    <a href="mailto:mageshofficialone83@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mageshwaran-maran-5737991b5" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/mageshwaran123" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Mageshwaran-Maran" target="_blank" class="social-link">
+                        <i class="fab fa-researchgate"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="IMG-20241118-WA0028_1.jpg" alt="Mageshwaran Maran">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate <span class="highlight">Associate Statistical Data Scientist</span> at Pfizer, 
+                        specializing in transforming complex clinical data into meaningful insights that drive 
+                        drug development and patient outcomes.
+                    </p>
+                    <p>
+                        With a strong foundation in <span class="highlight">biotechnology</span> and 
+                        <span class="highlight">bioinformatics</span>, I bridge the gap between biology 
+                        and data science. My work spans across multiple therapeutic areas including oncology, 
+                        infectious diseases, inflammation & immunology, and vaccines.
+                    </p>
+                    <p>
+                        I'm particularly proud of my contributions to high-impact publications in journals like 
+                        <span class="highlight">Nature Medicine</span>, <span class="highlight">Lancet Oncology</span>, 
+                        and <span class="highlight">NEJM</span>, as well as presentations at major conferences 
+                        including AACR, ESMO, ASCO, and ASH.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Clinical Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Publications</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="experience-container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Associate Statistical Data Scientist</h3>
+                                <h4 class="timeline-company">Pfizer</h4>
+                                <p class="timeline-location">Chennai, India</p>
+                            </div>
+                            <span class="timeline-period">Nov 2025 – Present</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Contributing to the development of standard R code for ADaM and TLFs across various therapeutic areas: Vaccine, Internal Medicine, and Inflammation & Immunology</li>
+                            <li>Developed an in-house validation package (Vader) for TLFs (Tables, Listings, and Figures)</li>
+                            <li>Gained experience with GitHub for version control and collaborative development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Junior Associate, Statistical Data Scientist</h3>
+                                <h4 class="timeline-company">Pfizer</h4>
+                                <p class="timeline-location">Chennai, India</p>
+                            </div>
+                            <span class="timeline-period">Sep 2023 – Oct 2025</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Led exploratory biomarker analysis, contributing to several high-impact clinical publications in journals such as Nature Medicine, Lancet Oncology, and NEJM, as well as presentations at conferences like AACR, ESMO, ASCO, and ASH</li>
+                            <li>Produced numerous First Time Right (FTR) reports, recognized by stakeholders including statisticians, translational scientists, and clinical teams</li>
+                            <li>Gained significant programming experience in non-standard TLFs, with expertise in statistical modeling and the creation of complex figures such as oncoprints, Kaplan-Meier plots, forest plots, and volcano plots</li>
+                            <li>Therapeutic Area Experience: Worked in oncology, infectious diseases (virology analysis), anti-drug antibody analysis, and inflammation & immunology</li>
+                            <li>Experience in SDTM, ADaM specification writing and programming, and TLFs, including writing programming notes</li>
+                            <li>Worked on CSR deliverables, including safety & efficacy, PC/PP, EU/BR, HGRAC, and BIMO listings</li>
+                            <li>Supported safety aggregated reporting and Investigator Brochures</li>
+                            <li>Assisted with P21 submission activities, resolving define issues and addressing comments</li>
+                            <li>Expertise in programming languages including SAS, R, and Python; developed stylesheets</li>
+                            <li>Developed Shiny dashboards and web applications to enhance productivity for programmers</li>
+                            <li>Presented at and contributed to conferences such as ConSPIC, PhUSE APAC, and ISCR</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Data Analyst Intern</h3>
+                                <h4 class="timeline-company">Unilever Research and Development Centre</h4>
+                                <p class="timeline-location">Bengaluru, India</p>
+                            </div>
+                            <span class="timeline-period">Oct 2022 – Apr 2023</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Implemented advanced algorithms for biomarker discovery and functional predictions using a 16S rRNA dataset, contributing to the identification of key markers and their biological significance</li>
+                            <li>Successfully performed comprehensive NGS data pre-processing and analysis, encompassing sequence data processing, quality control, and generating meaningful visualizations of abundance data using R (ggplot2, ggpubr) and Python (matplotlib, seaborn)</li>
+                            <li>Conducted multivariate data analysis techniques, including feature extraction, enrichment analysis, and machine learning models, to uncover patterns and relationships within complex genomics datasets</li>
+                            <li>Employed network analysis and graph theory methods to explore complex biological networks and understand their structure and function</li>
+                            <li>Applied ordination techniques such as Principal Coordinate Analysis (PCoA) and Principal Component Analysis (PCA) to reduce dimensionality and visualize high-dimensional genomics data</li>
+                            <li>Performed comprehensive statistical analysis, including ANOVA, correlation coefficient, and Wilcoxon tests, to assess the significance of findings and ensure robust data interpretations in genomics research</li>
+                            <li>Proficiently handled tools and databases such as DADA2, Qiime2, LefSe, PiCRUST, Cytoscape, Cell Ranger, Seurat, Scanpy and 10x Genomics enabling efficient data analysis and interpretation</li>
+                            <li>Demonstrated expertise in quality control, normalization, and differential expression analysis of transcriptomics data, ensuring accurate and reliable results for downstream analyses</li>
+                            <li>Utilized advanced techniques for cell clustering and trajectory analysis, providing insights into cellular heterogeneity and developmental processes</li>
+                            <li>Notable project: "In-silico analytics for deciphering the relationship between gut microbiome and sleep," contributing to the field of microbiome research and its impact on sleep patterns</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Student Researcher</h3>
+                                <h4 class="timeline-company">Bioinformatics Programming Lab - VIT</h4>
+                                <p class="timeline-location">Vellore, India</p>
+                            </div>
+                            <span class="timeline-period">Jun 2021 – May 2023</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Conducted research on drug discovery, pharmacokinetics, and dynamic simulations using high-performance computers (HPC) with Linux, contributing to the understanding of drug behavior and interactions</li>
+                            <li>Assisted in the development and writing of proposals, demonstrating strong research and communication skills, and provided clear tutorial documentation on software tools</li>
+                            <li>Actively contributed to the research team and collaborated with scientists to tackle complex biological problems by providing in-silico solutions</li>
+                            <li>Proficiently utilized tools and databases such as NCBI, Uniprot, Protein Data Bank, PubChem, ChemDraw, Gromacs, Visual Molecular Dynamics, Pymol, Avogadro, Autodock, BIOVIA Discovery Studio, and Xmgrace</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Summer Trainee</h3>
+                                <h4 class="timeline-company">CSIR - Centre for Cellular and Molecular Biology</h4>
+                                <p class="timeline-location">Hyderabad, India</p>
+                            </div>
+                            <span class="timeline-period">May 2022 – Jul 2022</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Knowledgeable in wildlife management, farm and forest management operations, and wildlife laws, demonstrating a well-rounded understanding of ecological and conservation principles</li>
+                            <li>Conducted fieldwork activities, including sample collection, to gather data on wildlife populations and their associated ecosystems</li>
+                            <li>Developed cryopreservation protocols for various cell types, ensuring the long-term preservation of valuable biological samples for research purposes</li>
+                            <li>Utilized skills in conducting wild animal autopsies, mammalian cell culture techniques, cryopreservation methods, and assays such as Trypan blue and MTT</li>
+                            <li>Engaged in field gene banking activities, contributing to the preservation and conservation of genetic diversity in wildlife populations</li>
+                            <li>Notable Project: "Developed Primary Fibroblast Cells from Skin Tissue of an Adult Male Sloth Bear Collected Post-Mortem" (India's 1st report)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Short Term Intern</h3>
+                                <h4 class="timeline-company">Centre for Stem Cell Research - CMC Medical College</h4>
+                                <p class="timeline-location">Vellore, India</p>
+                            </div>
+                            <span class="timeline-period">Oct 2021 – Dec 2021</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Proficient in the production of CRISPR/Cas9 gene knock-out, activation, and nickase purified plasmids, including oligonucleotide cloning via ligation and bacterial transformation</li>
+                            <li>Performed PCR, plasmid DNA isolation and purification, and DNA sequence analysis using tools such as SnapGene</li>
+                            <li>Maintained detailed and accurate records using FileMaker software and lab notebooks, ensuring proper documentation of experimental procedures and results</li>
+                            <li>Performed culture and transformation of E. coli into competent cells, as well as maintenance of lab equipment and preparation of reagents</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-r-project"></i> R</div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-python"></i> Python</div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-code"></i> SAS (Base)</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-code"></i> MATLAB</div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-html5"></i> HTML</div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Data Science & ML Libraries</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-database"></i> Pandas</div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-chart-line"></i> Scikit-learn</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-brain"></i> TensorFlow</div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-calculator"></i> NumPy</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-chart-area"></i> Matplotlib</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-chart-pie"></i> Seaborn</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-git-alt"></i> Git/GitHub</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-linux"></i> Linux</div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-file-excel"></i> Excel</div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-chart-bar"></i> Shiny</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-file-word"></i> Word</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-file-powerpoint"></i> PowerPoint</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Clinical & Specialized Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-dna"></i> SDTM/ADaM</div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-laptop-code"></i> Clinical Programming</div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-microscope"></i> Biomarker Analysis</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-dna"></i> NGS Analysis</div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-flask"></i> Drug Development</div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Bioinformatics Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-network-wired"></i> DADA2, Qiime2</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-project-diagram"></i> Cytoscape</div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-atom"></i> Gromacs, VMD, PyMOL</div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-dna"></i> Cell Ranger, Seurat</div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Soft Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-users"></i> Communication</div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-graduation-cap"></i> Eager to Learn</div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-chalkboard-teacher"></i> Teaching & Mentoring</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="education-container">
+            <h2 class="section-title">Education & Achievements</h2>
+            <div class="education-content">
+                <div class="education-card main-degree">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>M.Sc. Biotechnology (5 Year Integrated)</h3>
+                    <h4>Vellore Institute of Technology - Vellore, India</h4>
+                    <p class="period">June 2018 - May 2023</p>
+                    <p class="gpa">CGPA: 8.13/10.0</p>
+                </div>
+
+                <div class="achievements-section">
+                    <h3 class="subsection-title"><i class="fas fa-award"></i> Awards & Honors</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🏆</div>
+                            <h4>Raman Research Award</h4>
+                            <p>2022 - Recognition for outstanding research contribution at VIT</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🥇</div>
+                            <h4>Best Poster Presentation</h4>
+                            <p>National DNA Day 2021 - 1st Place out of 50+ teams</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🔬</div>
+                            <h4>Summer Research Fellowship</h4>
+                            <p>Indian Academy of Science - 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications-section">
+                    <h3 class="subsection-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>SAS Programming BASE Certification Course</h4>
+                                <p>Udemy - For SAS Beginners</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>Machine Learning A-Z</h4>
+                                <p>Udemy - AI, Python & R + ChatGPT</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>Microsoft Excel - Advanced</h4>
+                                <p>Udemy - Excel from Beginner to Advanced</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="publications-container">
+            <h2 class="section-title">Publications & Presentations</h2>
+            <div class="publications-content">
+                <div class="publications-section">
+                    <h3 class="subsection-title"><i class="fas fa-book"></i> Research Publications</h3>
+                    <div class="publication-card">
+                        <div class="pub-header">
+                            <div class="pub-badge">1st Author</div>
+                            <div class="pub-impact">Impact Factor: 2.719</div>
+                        </div>
+                        <h4 class="pub-title">Molecular dynamics study of quercetin families and its derivative compounds from Carica papaya leaf as breast cancer inhibitors</h4>
+                        <p class="pub-journal">Chemical Physics Letters - Elsevier • 2022</p>
+                        <p class="pub-description">Research on drug discovery using molecular dynamics simulations to identify potential breast cancer inhibitors from natural compounds found in papaya leaves.</p>
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0009261422001373" target="_blank" class="pub-link">
+                            View Publication <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contributions-section">
+                    <h3 class="subsection-title"><i class="fas fa-users"></i> Contributing Author</h3>
+                    <p class="contributions-intro">Contributed to exploratory biomarker analysis for multiple high-impact publications in:</p>
+                    <div class="journal-tags">
+                        <div class="journal-tag">Nature Medicine</div>
+                        <div class="journal-tag">Lancet Oncology</div>
+                        <div class="journal-tag">New England Journal of Medicine (NEJM)</div>
+                    </div>
+                </div>
+
+                <div class="conferences-section">
+                    <h3 class="subsection-title"><i class="fas fa-bullhorn"></i> Conference Presentations</h3>
+                    <p class="conferences-intro">Contributed to presentations and posters at major international conferences:</p>
+                    <div class="conferences-grid">
+                        <div class="conference-card">
+                            <div class="conf-name">AACR</div>
+                            <div class="conf-description">American Association for Cancer Research</div>
+                        </div>
+                        <div class="conference-card">
+                            <div class="conf-name">ESMO</div>
+                            <div class="conf-description">European Society for Medical Oncology</div>
+                        </div>
+                        <div class="conference-card">
+                            <div class="conf-name">ASCO</div>
+                            <div class="conf-description">American Society of Clinical Oncology</div>
+                        </div>
+                        <div class="conference-card">
+                            <div class="conf-name">ASH</div>
+                            <div class="conf-description">American Society of Hematology</div>
+                        </div>
+                        <div class="conference-card">
+                            <div class="conf-name">ConSPIC</div>
+                            <div class="conf-description">Conference on Statistical Programming in Clinical Research</div>
+                        </div>
+                        <div class="conference-card">
+                            <div class="conf-name">PhUSE APAC</div>
+                            <div class="conf-description">Pharmaceutical Users Software Exchange - Asia Pacific</div>
+                        </div>
+                        <div class="conference-card">
+                            <div class="conf-name">ISCR</div>
+                            <div class="conf-description">Indian Society for Clinical Research</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p class="contact-description">
+                        I'm always open to discussing new opportunities, collaborations, or just having 
+                        a conversation about data science and biotechnology. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:mageshofficialone83@gmail.com">mageshofficialone83@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+916382390616">+91 63823 90616</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Connect on Social Media</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/mageshwaran-maran-5737991b5" target="_blank" class="social-btn">
+                                <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/mageshwaran123" target="_blank" class="social-btn">
+                                <i class="fab fa-github"></i> <span>GitHub</span>
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Mageshwaran-Maran" target="_blank" class="social-btn">
+                                <i class="fab fa-researchgate"></i> <span>ResearchGate</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2024 Mageshwaran Maran. All rights reserved.</p>
+                <p class="footer-tagline">Transforming Data into Insights</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
